@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    background-color: #F9C1C3;
+    overflow: hidden;
+}
+
+.landing-inner {
+    position: fixed;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#subheading {
+    position: relative;
+    margin-top: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-family: 'DM Serif Text', serif;
+    font-weight: 200;
+    width: 50%;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 600px) {
+    .landing-inner {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .landing-inner {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing-inner {
+        max-width: 40%;
+    }
+}
