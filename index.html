@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Booked: Delivered to book lovers, by book lovers</title>
+        <meta name="description" content="Booked is a book subscription service that delivers hand-picked literary material to our community.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="booked.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="assets/site.webmanifest">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js"></script>
+        <section class="landing-page">
+            <div class="landing-inner">
+                <img src="assets/booked-logo.svg" alt="Booked Logo">
+                <h2 id="subheading">Delivered to book lovers, by book lovers</h2>
+                <script>
+                    var subheading = new CircleType(document.getElementById('subheading'))
+                    .radius(250);
+                    $(subheading.element).fitText();
+                </script>
+                <h2 id="subheading-mobile">Delivered to book lovers, by book lovers</h2>
+                <h3 id="form-title">Treat your shelf soon!</h3>
+                <div class="booked-form-container">
+                    <form action="https://bookedau.us10.list-manage.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="3535ede5f167996054a40847e">
+                        <input type="hidden" name="id" value="f854840403">
+                        <input type="email" placeholder="Email Address" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+                        <input type="submit" value="Notify Me!">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contact-copyright">
+                <a href="https://www.instagram.com/bookedau/">
+                    <img class="instagram" src="assets/booked-instagram.png" alt="Booked Instagram link">
+                </a>
+                <p>Want to say hey? <a href="mailto:hey@bookedau.com?subject=Hey%20Booked!">Click here.</a></p><br>
+                <p>Copyright Booked 2020</p>
+            </div>
+        </footer>
+    </body>
+</html>
