@@ -1,0 +1,164 @@
+html, body {
+    margin: 0;
+    background-color: #F9C1C3;
+    overflow: hidden;
+    background-image: url(assets/booked-background.svg);
+    background-position: center center;;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.landing-inner {
+    position: fixed;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#subheading {
+    display:none;
+}
+
+#subheading-mobile {
+    display: block;
+    position: relative;       
+    margin-top: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF0000;
+    font-family: 'DM Serif Text', serif;
+    font-weight: 200;
+    width: 90%;
+    letter-spacing: -0.8px;
+    font-size: 1.5em;
+}    
+
+#form-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -10%;
+    color: white;
+}
+
+.booked-form-container {
+    margin-top: -3%;
+}
+
+input[type=email], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FCDEDE;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #FCDEDE;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+input[type=submit], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #F37A52;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #F37A52;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+.contact-copyright {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #F37A52;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 0;
+    margin-bottom: 2%;
+    font-size: 1em;
+}
+
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .landing-inner {
+        max-width: 50%;
+    } 
+
+    #subheading-mobile {
+        display: none;
+    }  
+
+    #subheading {
+        display: block;
+        position: relative;
+        margin-top: 15%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FF0000;
+        font-family: 'DM Serif Text', serif;
+        font-weight: 200;
+        width: 50%;
+        letter-spacing: 1px;
+    }    
+
+    #form-title {
+        margin-top: -5%;
+        font-size: 2em;
+        color: white;
+    }
+
+    input[type=email], select {
+        width: 80%;
+        font-size: 1.5em;
+    }
+    
+    input[type=submit], select {
+        width: 80%;
+        font-size: 1.5em;
+    }   
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing-inner {
+        max-width: 35%;
+    }    
+
+    #subheading-mobile {
+        display: none;
+    }   
+
+    #form-title {
+        margin-top: -15%;
+        font-size: 1.8em;
+        color: white;
+    }
+}
